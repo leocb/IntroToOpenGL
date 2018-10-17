@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/ITOG.dir/src/main.cpp.o  -o ITOG -lGL -lGLU -lGLEW -lSDL2 -lassimp 
