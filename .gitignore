@@ -1,6 +1,9 @@
 # Build folder
 build
 
+# VSCode workspace settings
+.vscode/settings.json
+
 # Prerequisites
 *.d
 
