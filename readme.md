@@ -9,11 +9,11 @@
 
 ## Setup
 
-### Windows
+### Setup on Windows
 
 You're on your own mate, no ideia (or just switch to linux for dev)
 
-### Linux (Ubuntu)
+### Setup on Linux (Ubuntu)
 
 ```shell
 sudo apt install cmake libglew-dev libsdl2-dev libglm-dev
@@ -21,11 +21,11 @@ sudo apt install cmake libglew-dev libsdl2-dev libglm-dev
 
 ## Development
 
-### Windows
+### Development on Windows
 
 Use Visual Studio? IDK.
 
-### Linux (Ubuntu)
+### Development on Linux (Ubuntu)
 
 This Repo is meant to be used in VSCode with the C++ Extension.
 
