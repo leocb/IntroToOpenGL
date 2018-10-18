@@ -7,7 +7,7 @@
 - [SDL](https://www.libsdl.org/)
 - CMAKE
 
-## Setup dev
+## Setup
 
 ### Windows
 
@@ -19,3 +19,15 @@ You're on your own mate, no ideia (or just switch to linux for dev)
 sudo apt install cmake libglew-dev libsdl2-dev libglm-dev
 ```
 
+## Development
+
+### Windows
+
+Use Visual Studio? IDK.
+
+### Linux (Ubuntu)
+
+This Repo is meant to be used in VSCode with the C++ Extension.
+
+- To compile and run the code, you can use the `make` cmd and then execute the following file: `./build/ITOG`
+- or if you're using VSCode, press `Ctrl + Shift + B` and the script will do everything automagically
