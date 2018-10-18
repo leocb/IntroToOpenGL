@@ -29,5 +29,5 @@ Use Visual Studio? IDK.
 
 This Repo is meant to be used in VSCode with the C++ Extension.
 
-- To compile and run the code, you can use the `make` cmd and then execute the following file: `./build/ITOG`
+- To compile and run the code, you can use the `make` cmd and then execute the following file: `./build/ITMOG`
 - or if you're using VSCode, press `Ctrl + Shift + B` and the script will do everything automagically

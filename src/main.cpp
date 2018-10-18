@@ -4,7 +4,7 @@
 
 int main(int argc, char const *argv[])
 {
-  Display display(800, 600, "ITOG Awesome Window");
+  Display display(800, 600, "ITMOG Awesome Window");
 
   while (!display.isClosed())
   {
