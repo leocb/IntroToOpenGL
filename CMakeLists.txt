@@ -58,12 +58,16 @@ endif ( CMAKE_BUILD_TYPE STREQUAL "Release" )
 file(GLOB_RECURSE HDRS
 	${ITMOG_SOURCE_DIR}/src/*.h
 	${ITMOG_SOURCE_DIR}/src/*.hpp
+	${ITMOG_SOURCE_DIR}/libs/*.h
+	${ITMOG_SOURCE_DIR}/libs/*.hpp
 )
 
 # Lets LOAD app our sources!
 file(GLOB_RECURSE SRCS
 	${ITMOG_SOURCE_DIR}/src/*.cpp
 	${ITMOG_SOURCE_DIR}/src/*.c
+	${ITMOG_SOURCE_DIR}/libs/*.cpp
+	${ITMOG_SOURCE_DIR}/libs/*.c
 )
 
 # Define the executable
