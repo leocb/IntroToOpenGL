@@ -93,6 +93,7 @@ include_directories(
 	${ITMOG_SOURCE_DIR}/headers
 	${ITMOG_SOURCE_DIR}/sources
 	${ITMOG_SOURCE_DIR}/src
+	${ITMOG_SOURCE_DIR}/libs
 	${OPENGL_INCLUDE_DIRS}
 	${GLEW_INCLUDE_DIRS}
 	${SDL2_INCLUDE_DIRS}

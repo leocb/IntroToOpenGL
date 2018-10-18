@@ -16,7 +16,7 @@ You're on your own mate, no ideia (or just switch to linux for dev)
 ### Setup on Linux (Ubuntu)
 
 ```shell
-sudo apt install cmake libglew-dev libsdl2-dev libglm-dev
+sudo apt install cmake libglew-dev libsdl2-dev libglm-dev libc++-dev
 ```
 
 ## Development
