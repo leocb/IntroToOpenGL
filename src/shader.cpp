@@ -18,8 +18,9 @@ Shader::Shader(const std::string &fileName)
   for (unsigned int i = 0; i < NUM_SHADERS; i++)
     glAttachShader(m_program, m_shaders[i]);
 
-  // bind attrib
+  // bind attrib indexes (ATTENTION HERE, the indexes should be the same when creating the bindings (mesh.cpp))
   glBindAttribLocation(m_program, 0, "position");
+  glBindAttribLocation(m_program, 1, "texCoord");
 
   // Link and validate
   glLinkProgram(m_program);
