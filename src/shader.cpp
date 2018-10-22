@@ -28,6 +28,9 @@ Shader::Shader(const std::string &fileName)
 
   glValidateProgram(m_program);
   checkShaderError(m_program, GL_VALIDATE_STATUS, true, "Error: Program is invalid: ");
+
+  // Get the handler for the "transform" uniform
+  m_uniforms[TRANSFORM_U] = glGetUniformLocation(m_program, "transform");
 };
 
 // Destructor
@@ -45,6 +48,13 @@ Shader::~Shader()
 void Shader::bind()
 {
   glUseProgram(m_program);
+}
+
+// Update with the transform
+void Shader::update(const Transform &transform)
+{
+  glm::mat4 model = transform.getModel();
+  glUniformMatrix4fv(m_uniforms[TRANSFORM_U], 1, GL_FALSE, &model[0][0]);
 }
 
 // Shader Compiler
