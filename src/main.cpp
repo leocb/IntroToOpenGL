@@ -20,12 +20,15 @@ int main(int argc, char const *argv[])
       Vertex(glm::vec3(0.0, 0.5, 0.0), glm::vec2(0.5, 1.0)),
       Vertex(glm::vec3(0.5, -0.5, 0.0), glm::vec2(1.0, 0.0))};
 
-  Mesh mesh(vertices, sizeof(vertices) / sizeof(vertices[0]));
+  unsigned int indices[] = {0, 1, 2};
+
+  Mesh mesh(vertices, sizeof(vertices) / sizeof(vertices[0]), indices, sizeof(indices) / sizeof(indices[0]));
+  Mesh mesh2("./res/models/monkey3.obj");
 
   Shader shader("./res/shaders/basicShader");
 
   Texture texture("./res/images/bricks.jpg");
-  Camera camera(glm::vec3(0, 0, -3), 70.0f, (float)WIDTH / (float)HEIGHT, 0.01f, 1000.0f);
+  Camera camera(glm::vec3(0, 0, -5), 70.0f, (float)WIDTH / (float)HEIGHT, 0.01f, 1000.0f);
   Transform transform;
 
   float counter = 0.0f;
@@ -41,14 +44,15 @@ int main(int argc, char const *argv[])
     transform.getPos().z = cosCounter;
     transform.getRot().z = counter;
     transform.getRot().x = counter;
-    transform.getRot().y = counter;
+    transform.getRot().y = counter * 2;
 
     //transform.setScale(glm::vec3(abs(cosCounter), abs(cosCounter), abs(cosCounter)));
 
     shader.bind();
     texture.bind(0);
     shader.update(transform, camera);
-    mesh.draw();
+    // mesh.draw();
+    mesh2.draw();
 
     display.update();
 

@@ -21,6 +21,7 @@ Shader::Shader(const std::string &fileName)
   // bind attrib indexes (ATTENTION HERE, the indexes should be the same when creating the bindings (mesh.cpp))
   glBindAttribLocation(m_program, 0, "position");
   glBindAttribLocation(m_program, 1, "texCoord");
+  glBindAttribLocation(m_program, 2, "normal");
 
   // Link and validate
   glLinkProgram(m_program);
